@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body {
+        font-family: 'Poppins';
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            .container {
+                .content {
+                    display: grid;
+                    place-items: center;
+
+                    h1 {
+                        font-size: 4.176874876rem;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+
+                    button {
+                        width: 40%;
+                        padding: 10px 18px;
+                        background-color: #000;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 600;
+                        border: 1px solid #000;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 300ms;
+
+                        &:hover {
+                            background-color: #fff;
+                            color: #000;
+                            border: 1px solid #000;
+                        }
+                    }
+                }
+            }
+        }
+
+        .gameplay-main {
+            padding: 1rem;
+            text-align: center;
+            .error-numSelector {
+                display: flex;
+                flex-direction: column-reverse;
+                .error {
+                    color: red;
+                    margin-bottom: 5rem;
+                }
+                .number-selection {
+                    margin-top: 0.5rem;
+                    p {
+                        position: relative;
+                        font-weight: 600;
+                        font-size: large;
+                        margin-bottom: 1rem;
+                    }
+    
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                    
+                    button {
+                        width: 50px;
+                        height: 50px;
+                        font-weight: bold;
+                        background: transparent;
+                        border: 1px solid #000;
+                        transition: all 300ms;
+                    }
+    
+                }
+            }
+            
+            .total-score { 
+                margin-top: 4rem;
+                margin-bottom: 1.5rem;
+                h1 {
+                    font-size: 4rem;
+                }
+                p {
+                    margin-top: -5px;
+                    font-weight: 600;
+                    font-size: large;
+                }
+            }
+
+        }
+
+        .dice-container {
+            .img-container {
+                margin-bottom: 2rem;
+                img {
+                    cursor: pointer;
+                }
+                p {
+                    letter-spacing: 0.08rem;
+                    font-weight: bold;
+                }
+            }
+            .buttons {
+                display: grid;
+                place-items: center;
+                flex-direction: column;
+                margin-top: 1rem;
+                gap: 1rem;
+                button {
+                    width: 8.5rem;
+                    height: 2rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all 200ms;
+                }
+                .first {
+                    background: transparent;
+                    color: #000;
+                    border: 1px solid #000;
+                    &:hover {
+                        background-color: #000;
+                        color: #fff;
+                    }
+                }
+                .second {
+                    background-color: #000;
+                    color: #fff;
+                    border: 1px solid #000;
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .rules {
+            background-color: #fbf1f1;
+            margin: 0 15px 15px;
+            padding: 15px;
+            text-align: start;
+            h2 {
+                font-size: 1.1rem;
+            }
+            .text {
+                margin-top: 1rem;
+            }
+            p {
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.bg-img {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .bg-img {
+        display: block;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1182px;
+        height: 450px;
+
+        .bg-img {
+            width: 649px;
+            height: inherit;
+            display: grid;
+            place-items: center;
+            img {
+                height: 450px;
+            }
+            
+        }
+
+        .content {
+            right: 5rem;
+            width: 50%;
+            gap: 2rem;
+        }
+    }
+    .gameplay-main {
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-content: end;
+            flex-direction: row-reverse;
+            padding: 1rem 3rem;
+            height: 151px;
+            .total-score {
+                margin-top: -1rem;
+                h1 {
+                    font-size: 4.5rem;
+                }
+            }
+            .error-numSelector {
+                display: flex;
+                flex-direction: column;
+                .error {
+                    padding: -1rem 0 0;
+                    margin: 0;
+                }
+                .number-selection {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: end;
+                    gap: 2rem;
+                .numbers {
+                    gap: 1.5rem;
+                }
+            }
+            }
+            
+        }
+
+        
+    }
+    .dice-container {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        .img-container {
+            .dice {
+                cursor: pointer;
+            }
+        }
+        .buttons {
+            position: absolute;
+            top: 9rem;
+            left: -4rem;
+        }
+
+    }
+    .rules {
+        width: 48rem;
+        position: absolute;
+        top: 6rem;
+    }
+}
