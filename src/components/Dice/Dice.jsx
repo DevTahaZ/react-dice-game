@@ -16,7 +16,7 @@ function Dice({currentDice, roleDice, selectedNumber}) {
     <main className='dice-container'>
       <div className='img-container'>
         <div className='dice' onClick={roleDice}>
-          <img onClick={animate} className={shake ? 'dice-shake' : null} src={`/assets/dices/dice1.svg`} alt="" />
+          <img onClick={animate} className={shake ? 'dice-shake' : null} src={`/src/assets/dices/dice${currentDice}.svg`} alt="" />
         </div>
         <p>Click on Dice to roll</p>
       </div>
