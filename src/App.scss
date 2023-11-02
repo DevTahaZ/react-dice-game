@@ -100,6 +100,18 @@
         .dice-container {
             .img-container {
                 margin-bottom: 2rem;
+                .dice {
+                    div {
+                        display: grid;
+                        place-items: center;
+                        margin: 0 auto 1rem;
+                        font-size: 5rem;
+                        font-weight: bold;
+                        width: 14rem;
+                        height: 14rem;
+                        border: 1px solid #000;
+                    }
+                }
                 img {
                     cursor: pointer;
                 }
@@ -257,6 +269,16 @@
         .img-container {
             .dice {
                 cursor: pointer;
+                
+                div {
+                    display: grid;
+                    place-items: center;
+                    font-size: 5rem;
+                    font-weight: bold;
+                    width: 16rem;
+                    height: 16rem;
+                    border: 1px solid #000;
+                }
             }
         }
         .buttons {

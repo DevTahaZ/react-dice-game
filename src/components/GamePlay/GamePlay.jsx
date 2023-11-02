@@ -45,7 +45,7 @@ function GamePlay() {
           selectedNumber={selectedNumber} setSelectedNumber={setSelectedNumber} error={error} setError={setError}
         />
         <Dice 
-          currentDice={currentDice} roleDice={roleDice} selectedNumber={selectedNumber}
+          currentDice={currentDice} roleDice={roleDice} selectedNumber={selectedNumber} randomNum={generateRandomnum}
         />
         <div className='dice-container'>
           <div className='buttons'>
