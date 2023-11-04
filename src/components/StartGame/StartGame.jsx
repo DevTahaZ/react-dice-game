@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../App.scss'
-import bgImg from '../../assets/dices.png'
 
 
 function StartGame({toggle}) {
@@ -8,7 +7,7 @@ function StartGame({toggle}) {
     <main className='main-container'>
         <div className='container'>
             <div className='bg-img'>
-                <img src={bgImg} alt="" />
+                <img src='dices.png' alt="" />
             </div>
             <div className='content'>
                 <h1>Dice Game</h1>
